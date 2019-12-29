@@ -6,6 +6,7 @@ import HomePage from './pages/Homepage/homepage.component';
 
 const Hatpage=() => (
  <div>
+   <h1>Hats Page</h1>
  </div>
 
 );
