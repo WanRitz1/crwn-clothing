@@ -9,8 +9,8 @@ const SHOP_DATA = [
         {
           id: 1,
           name: 'Brown Brim',
-          // imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          imageUrl: "/images/shop-img/hats/brown-brim.png",
+          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+          //imageUrl: "/images/shop-img/hats/brown-brim.png",
           price: 25
         },
         {
@@ -219,7 +219,7 @@ const SHOP_DATA = [
         {
           id: 28,
           name: 'Yellow Track Suit',
-          // imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+          //imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
           imageUrl: "/images/shop-img/womens/yellow-track-suit.png",
           price: 135
         },
