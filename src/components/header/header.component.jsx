@@ -1,7 +1,7 @@
 import React  from 'react';
 import './header.styles.scss';
 import {Link} from 'react-router-dom';
-//import { ReactComponent as Logo } from '../../assets/crown.svg';
+//import Logo  from '../../images/shop-img/jackets.png';
 
 const Header = () =>(
     <div className='header'>
@@ -18,5 +18,5 @@ const Header = () =>(
         </div>
     </div>   
 
-)
+);
 export default Header;  
