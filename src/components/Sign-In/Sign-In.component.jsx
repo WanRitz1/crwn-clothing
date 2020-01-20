@@ -2,6 +2,8 @@ import React from 'react';
 import './Sign-In.styles.scss';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+//firebase importing
+import {signInWithGoogle} from '../../firebase/firebase.utils';
 //use class becuase we want to store information
 class SignIn extends React.Component{
     constructor(props){
@@ -39,6 +41,7 @@ class SignIn extends React.Component{
                    
                     
                     <CustomButton type ='submit'>Sign In</CustomButton>
+    <CustomButton onClick = {signInWithGoogle}>{''}Sign In With Google{''}</CustomButton>
                 </form>
             </div>
         )
