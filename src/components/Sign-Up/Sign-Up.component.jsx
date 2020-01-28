@@ -9,17 +9,17 @@ class SignUp extends React.Component {
         super();
 
         this.state = {
-            displayName = '',
-            email = '',
-            password = '',
-            confirmPassword = ''
+            displayName : '',
+            email : '',
+            password : '',
+            confirmPassword : ''
         };
     }
 
     handleSubmit = async event => {
         event.preventDefault();
         const {displayName,email,password,confirmPassword} = this.state;
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             alert ("Password dont match");
             return;
         }
@@ -27,10 +27,10 @@ class SignUp extends React.Component {
             const {user} = await auth.createUserWithEmailAndPassword(email,password);
             await createUserProfileDocument (user,{displayName});
             this.setState({
-            displayName = '',
-            email = '',
-            password = '',
-            confirmPassword = ''
+            displayName : '',
+            email : '',
+            password : '',
+            confirmPassword : ''
             });
         } catch (error){
             console.error(error);
@@ -50,7 +50,7 @@ class SignUp extends React.Component {
                 <span>Sign up with your email and password</span>
                 <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <FormInput
-                        type='text'
+                        type = 'text'
                         name='displayName'
                         value={displayName}
                         onChange={this.handleChange}
