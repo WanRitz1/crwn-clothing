@@ -42,7 +42,7 @@ unsubscribeFromAuth = null
   render(){
 return (
     <div>
-     <Header currentUser={this.state.currentUser}/>
+     <Header/>
       <Switch>
      <Route exact path='/' component = {HomePage}/>
      <Route path='/Shop' component = {ShopPage}/>
