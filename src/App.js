@@ -42,9 +42,9 @@ return (
     <div>
      <Header/>
       <Switch>
-     <Route exact path='/Homepage' component = {HomePage}/>
+     <Route exact path='/' component = {HomePage}/>
      <Route path='/Shop' component = {ShopPage}/>
-     <Route exact path='/SignIn' render = {() => this.props.currentUser ? ( <Redirect to='/Homepage' />) : ( <SignInAndSignUp/> )}/>
+     <Route exact path='/SignIn' render = {() => this.props.currentUser ? ( <Redirect to='/' />) : ( <SignInAndSignUp/> )}/>
      </Switch>
     </div>
     );
