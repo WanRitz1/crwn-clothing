@@ -3,14 +3,14 @@ import './header.styles.scss';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {auth} from '../../firebase/firebase.utils';
-//import Logo  from '../../images/shop-img/jackets.png';
+import {ReactComponet as Logo}  from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 
 
 const Header = ({currentUser}) =>(
     <div className='header'>
         <Link className ='logo-container' to='/'>
-            
+            <Logo className='logo'/>
         </Link>
         <div className='options'>
             <Link className = 'option' to='/shop'>
