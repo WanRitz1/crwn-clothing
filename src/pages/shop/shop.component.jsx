@@ -2,7 +2,7 @@ import React from 'react';
 import {Route} from 'react-router-dom'; 
 
 //import {createStructuredSelector} from 'reselect';
-import CollectionsOverview from '../../components/collections-overview/collections-overiew.component';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 import CollectionPage from '../collection/collection.component';
 //import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 
