@@ -35,7 +35,7 @@ unsubscribeFromAuth = null
       }
       setCurrentUser(userAuth);
       //addCollectionAndDocuments('collections',
-      //collectionsArray.map(({title,items})=>({title,items})) );
+      //yaencollectionsArray.map(({title,items})=>({title,items})) );
     });
   }
 
